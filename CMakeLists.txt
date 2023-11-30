@@ -26,3 +26,10 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/ConeArray.msg"
   DEPENDENCIES geometry_msgs std_msgs
 )
+
+install(TARGETS
+  lart_msgs
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+ament_package()
