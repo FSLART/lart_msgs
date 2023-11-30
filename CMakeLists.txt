@@ -27,9 +27,6 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   DEPENDENCIES geometry_msgs std_msgs
 )
 
-install(TARGETS
-  lart_msgs
-  DESTINATION lib/${PROJECT_NAME}
-)
+ament_export_dependencies(rosidl_default_runtime)
 
 ament_package()
