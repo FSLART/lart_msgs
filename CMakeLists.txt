@@ -5,13 +5,6 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
-set(TORCH_PATH /usr/local/lib/libtorch)
-# set(CMAKE_PREFIX_PATH /usr/local/lib/libtorch)
-set(CMAKE_CUDA_ARCHITECTURES 75)
-set(CMAKE_CUDA_COMPILER /usr/local/cuda/bin/nvcc)
-
-set(CMAKE_BUILD_TYPE Release)
-
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(std_msgs REQUIRED)
@@ -21,12 +14,21 @@ find_package(rosidl_default_generators REQUIRED)
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
+if(BUILD_TESTING)
+  find_package(ament_lint_auto REQUIRED)
+  # the following line skips the linter which checks for copyrights
+  # comment the line when a copyright and license is added to all source files
+  set(ament_cmake_copyright_FOUND TRUE)
+  # the following line skips cpplint (only works in a git repo)
+  # comment the line when this package is in a git repo and when
+  # a copyright and license is added to all source files
+  set(ament_cmake_cpplint_FOUND TRUE)
+  ament_lint_auto_find_test_dependencies()
+endif()
+
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Cone.msg"
   "msg/ConeArray.msg"
   DEPENDENCIES geometry_msgs std_msgs
 )
-
-ament_export_dependencies(rosidl_default_runtime)
-
 ament_package()
