@@ -29,8 +29,6 @@ endif()
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Cone.msg"
   "msg/ConeArray.msg"
-  "msg/drivetrain/WheelSpeed.msg"
-  "msg/drivetrain/WheelSpeedArray.msg"
   DEPENDENCIES geometry_msgs std_msgs
 )
 ament_package()
