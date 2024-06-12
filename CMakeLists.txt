@@ -27,8 +27,12 @@ if(BUILD_TESTING)
 endif()
 
 rosidl_generate_interfaces(${PROJECT_NAME}
+  "msg/ASStatus.msg"
   "msg/Cone.msg"
   "msg/ConeArray.msg"
+  "msg/Dynamics.msg"
+  "msg/Mission.msg"
+  "msg/State.msg"
   DEPENDENCIES geometry_msgs std_msgs
 )
 ament_package()
