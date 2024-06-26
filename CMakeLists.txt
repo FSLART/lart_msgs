@@ -36,4 +36,5 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/DynamicsCMD.msg"
   DEPENDENCIES geometry_msgs std_msgs
 )
+ament_export_dependencies(rosidl_default_runtime)
 ament_package()
