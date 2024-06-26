@@ -33,6 +33,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Dynamics.msg"
   "msg/Mission.msg"
   "msg/State.msg"
+  "msg/DynamicsCMD.msg"
   DEPENDENCIES geometry_msgs std_msgs
 )
 ament_package()
