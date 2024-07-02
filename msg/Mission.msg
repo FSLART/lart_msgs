@@ -1,3 +1,4 @@
+uint8 data
 uint8 ACCELERATION=1
 uint8 SKIDPAD=2
 uint8 TRACKDRIVE=3
