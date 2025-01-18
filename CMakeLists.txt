@@ -35,6 +35,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/State.msg"
   "msg/DynamicsCMD.msg"
   "msg/GNSSINS.msg"
+  "msg/PathSpline.msg"
   DEPENDENCIES geometry_msgs std_msgs
 )
 ament_package()
