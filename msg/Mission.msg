@@ -1,3 +1,5 @@
+std_msgs/Header header
+
 uint8 data
 uint8 MANUAL=0
 uint8 ACCELERATION=1
