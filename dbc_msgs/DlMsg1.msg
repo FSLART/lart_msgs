@@ -1,0 +1,6 @@
+std_msgs/Header header
+
+float32 speed_actual
+float32 speed_target
+float32 steering_angle_actual
+float32 steering_angle_target
