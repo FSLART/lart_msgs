@@ -37,6 +37,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/GNSSINS.msg"
   "msg/PathSpline.msg"
   "msg/SlamStats.msg"
+  "msg/PathPoint.msg"
+  "msg/PathArray.msg"
   "srv/Heartbeat.srv"
   
   "dbc_msgs/AcuIgn.msg"
