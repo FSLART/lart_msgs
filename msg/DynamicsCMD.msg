@@ -5,3 +5,6 @@ float32 steering_angle
 
 #Desired RPM
 uint16 rpm
+
+#Acceleration command
+float32 acc_cmd
