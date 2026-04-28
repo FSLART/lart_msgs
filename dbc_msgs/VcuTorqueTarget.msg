@@ -1,3 +1,3 @@
 std_msgs/Header header
 
-int8 state
+int16 torque_target
