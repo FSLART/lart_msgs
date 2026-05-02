@@ -43,14 +43,13 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   
   "dbc_msgs/Acu.msg"
   "dbc_msgs/Aqt1.msg"
-  "dbc_msgsAqt2.msg/"
   "dbc_msgs/Aqt2.msg"
   "dbc_msgs/Aqt3.msg"
   "dbc_msgs/Aqt4.msg"
   "dbc_msgs/Aqt7.msg"
   "dbc_msgs/AsfSignals.msg"
   "dbc_msgs/CubemarsFeedback.msg"
-  "dbc_msgs/CubemarsPossitionLoop.msg"
+  "dbc_msgs/CubemarsPositionLoop.msg"
   "dbc_msgs/DvDynamics1.msg"
   "dbc_msgs/DvDynamics2.msg"
   "dbc_msgs/DvStatus.msg"
@@ -61,6 +60,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "dbc_msgs/VcuRpm.msg"
   "dbc_msgs/VcuRpmTarget.msg"
   "dbc_msgs/VcuTorqueTarget.msg"
+  "dbc_msgs/SlamStatsCan.msg"
   
   DEPENDENCIES geometry_msgs std_msgs
 )
