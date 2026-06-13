@@ -6,3 +6,4 @@ geometry_msgs/PoseStamped[] poses
 #curvature of the path for each path point
 float32[] curvature 
 float32[] distance
+float32[] velocity
