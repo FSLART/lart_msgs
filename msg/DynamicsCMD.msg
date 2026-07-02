@@ -8,3 +8,6 @@ uint16 rpm
 
 #Acceleration command
 float32 acc_cmd
+
+#Target Speed
+float32 target_ms
