@@ -1,10 +1,8 @@
-std_msgs/Header header
-
-int8 speed_actual
-int8 speed_target
+float32 brake_hydr_actual
+float32 brake_hydr_target
+float32 motor_moment_actual
+float32 motor_moment_target
+float32 speed_actual
+float32 speed_target
 float32 steering_angle_actual
 float32 steering_angle_target
-int8 brake_hydr_actual
-int8 brake_hydr_target
-int8 motor_moment_actual
-int8 motor_moment_target
