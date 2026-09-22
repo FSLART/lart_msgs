@@ -1,2 +1,4 @@
-float32 coolingfan_pwm
-float32 waterpump_pwm
+std_msgs/Header header
+
+int8 waterpump_pwm
+int8 coolingfan_pwm

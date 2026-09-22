@@ -1,3 +1,5 @@
-float32 acceleration_lateral
+std_msgs/Header header
+
 float32 acceleration_longitudinal
+float32 acceleration_lateral
 float32 yaw_rate

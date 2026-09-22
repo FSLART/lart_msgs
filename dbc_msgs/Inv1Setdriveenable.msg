@@ -1,1 +1,3 @@
-float32 inv1_cmd_driveenable
+std_msgs/Header header
+
+int8 inv1_cmd_driveenable

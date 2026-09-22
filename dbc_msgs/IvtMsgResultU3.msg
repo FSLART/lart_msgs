@@ -1,7 +1,9 @@
-float32 ivt_id_result_u3
-float32 ivt_msgcount_result_u3
-float32 ivt_result_u3
-float32 ivt_result_u3_channel_error
-float32 ivt_result_u3_measurement_error
-float32 ivt_result_u3_ocs
-float32 ivt_result_u3_system_error
+std_msgs/Header header
+
+int8 ivt_id_result_u3
+int8 ivt_result_u3_system_error
+int8 ivt_result_u3_measurement_error
+int8 ivt_result_u3_channel_error
+int8 ivt_result_u3_ocs
+int8 ivt_msgcount_result_u3
+int32 ivt_result_u3

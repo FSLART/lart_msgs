@@ -1,2 +1,4 @@
-float32 ignition_switch_raw
-float32 r2d_button_raw
+std_msgs/Header header
+
+int8 ignition_switch_raw
+int8 r2d_button_raw

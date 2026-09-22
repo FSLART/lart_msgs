@@ -1,3 +1,5 @@
+std_msgs/Header header
+
+int32 inv2_actual_erpm
 float32 inv2_actual_duty
-float32 inv2_actual_erpm
-float32 inv2_actual_inputvoltage
+int16 inv2_actual_inputvoltage

@@ -1,3 +1,5 @@
-float32 cones_count_actual
-float32 cones_count_all
-float32 lap_counter
+std_msgs/Header header
+
+int8 lap_counter
+int8 cones_count_actual
+int32 cones_count_all

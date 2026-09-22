@@ -1,4 +1,6 @@
-float32 inv2_cmd_setdigoutput1
-float32 inv2_cmd_setdigoutput2
-float32 inv2_cmd_setdigoutput3
-float32 inv2_cmd_setdigoutput4
+std_msgs/Header header
+
+int8 inv2_cmd_setdigoutput4
+int8 inv2_cmd_setdigoutput3
+int8 inv2_cmd_setdigoutput2
+int8 inv2_cmd_setdigoutput1

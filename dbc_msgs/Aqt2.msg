@@ -1,3 +1,4 @@
-float32 brake_temp
+std_msgs/Header header
+
 float32 tire_temp
-float32 wheel_spd
+float32 brake_temp

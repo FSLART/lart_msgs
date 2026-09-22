@@ -1,1 +1,3 @@
-float32 signal
+std_msgs/Header header
+
+int8 signal

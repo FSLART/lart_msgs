@@ -1,7 +1,9 @@
-float32 ivt_id_result_wh
-float32 ivt_msgcount_result_wh
-float32 ivt_result_wh
-float32 ivt_result_wh_channel_error
-float32 ivt_result_wh_measurement_error
-float32 ivt_result_wh_ocs
-float32 ivt_result_wh_system_error
+std_msgs/Header header
+
+int8 ivt_id_result_wh
+int8 ivt_result_wh_system_error
+int8 ivt_result_wh_measurement_error
+int8 ivt_result_wh_channel_error
+int8 ivt_result_wh_ocs
+int8 ivt_msgcount_result_wh
+int32 ivt_result_wh

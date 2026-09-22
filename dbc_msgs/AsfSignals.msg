@@ -1,4 +1,6 @@
-float32 brake_pressure_front
-float32 brake_pressure_rear
+std_msgs/Header header
+
 float32 ebs_pressure_tank_front
 float32 ebs_pressure_tank_rear
+float32 brake_pressure_front
+float32 brake_pressure_rear
