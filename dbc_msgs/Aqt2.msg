@@ -1,4 +1,4 @@
 std_msgs/Header header
 
-float32 tire_temp
-float32 brake_temp
+float32 front_left_wheel_rpm
+float32 front_right_wheel_rpm
