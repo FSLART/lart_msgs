@@ -1,0 +1,8 @@
+float32 temperature_025
+float32 temperature_026
+float32 temperature_027
+float32 temperature_028
+float32 temperature_029
+float32 temperature_030
+float32 temperature_031
+float32 temperature_032
