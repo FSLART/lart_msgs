@@ -1,3 +1,5 @@
+std_msgs/Header header
+
 float32 temperature_017
 float32 temperature_018
 float32 temperature_019

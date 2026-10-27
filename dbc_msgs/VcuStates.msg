@@ -1,6 +1,18 @@
 std_msgs/Header header
 
 int8 vcu_state
+int8 throttle_status
+int8 tc_state
+int8 tv_state
+int8 front_wheel_speed_ok
+int8 steering_angle_ok
+float32 front_left_speed
+float32 front_right_speed
+int8 tc_factor_rear_left
+int8 tc_factor_rear_right
+int8 tv_shift
+float32 road_wheel_angle
+int8 vcu_states_counter
 
 # Signal Value Constants
 int8 VCU_STATE_STATE_INIT = 0
@@ -12,15 +24,30 @@ int8 VCU_STATE_STATE_WAITING_FOR_R2D_AUTO = 5
 int8 VCU_STATE_STATE_READY_MANUAL = 6
 int8 VCU_STATE_STATE_READY_AUTONOMOUS = 7
 int8 VCU_STATE_STATE_AS_EMERGENCY = 8
-float32 front_left_speed
-float32 front_right_speed
-float32 front_wheel_speed_ok
-float32 road_wheel_angle
-float32 steering_angle_ok
-float32 tc_factor_rear_left
-float32 tc_factor_rear_right
-float32 tc_state
-float32 throttle_status
-float32 tv_shift
-float32 tv_state
-float32 vcu_states_counter
+int8 THROTTLE_STATUS_COAST = 0
+int8 THROTTLE_STATUS_DRIVE = 1
+int8 THROTTLE_STATUS_REGEN = 2
+int8 THROTTLE_STATUS_REGEN_OFF_DC_VOLTAGE = 3
+int8 THROTTLE_STATUS_APPS_ERROR = 4
+int8 THROTTLE_STATUS_INVERTER_FAULT = 5
+int8 THROTTLE_STATUS_BSPD_CUT = 6
+int8 TC_STATE_DISABLED = 0
+int8 TC_STATE_NO_FRONT_WHEEL_SPEED = 1
+int8 TC_STATE_NO_DRIVE = 2
+int8 TC_STATE_BELOW_MIN_SPEED = 3
+int8 TC_STATE_GRIP = 4
+int8 TC_STATE_CUT_REAR_LEFT = 5
+int8 TC_STATE_CUT_REAR_RIGHT = 6
+int8 TC_STATE_CUT_BOTH = 7
+int8 TV_STATE_DISABLED = 0
+int8 TV_STATE_NO_FRONT_WHEEL_SPEED = 1
+int8 TV_STATE_NO_STEERING_ANGLE = 2
+int8 TV_STATE_BELOW_MIN_SPEED = 3
+int8 TV_STATE_STRAIGHT = 4
+int8 TV_STATE_MORE_TORQUE_RIGHT = 5
+int8 TV_STATE_MORE_TORQUE_LEFT = 6
+int8 TV_STATE_AT_MAX_SHIFT = 7
+int8 FRONT_WHEEL_SPEED_OK_MISSING = 0
+int8 FRONT_WHEEL_SPEED_OK_OK = 1
+int8 STEERING_ANGLE_OK_MISSING = 0
+int8 STEERING_ANGLE_OK_OK = 1

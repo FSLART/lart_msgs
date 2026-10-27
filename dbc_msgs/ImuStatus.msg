@@ -1,21 +1,28 @@
-float32 clip_acc_x
-float32 clip_acc_y
-float32 clip_acc_z
-float32 clip_gyr_x
-float32 clip_gyr_y
-float32 clip_gyr_z
-float32 clip_mag_x
-float32 clip_mag_y
-float32 clip_mag_z
-float32 clipping_indication
-float32 clock_bias_estimation
-float32 filter_mode
-float32 filter_valid
-float32 gnss_fix
-float32 gnss_time_pulse
-float32 no_rotation_update_status
-float32 representative_motion
-float32 rtk_status
-float32 self_test
-float32 syncin_marker
-float32 syncout_marker
+std_msgs/Header header
+
+int8 self_test
+int8 filter_valid
+int8 gnss_fix
+int8 no_rotation_update_status
+int8 representative_motion
+int8 clock_bias_estimation
+int8 clip_acc_x
+int8 clip_acc_y
+int8 clip_acc_z
+int8 clip_gyr_x
+int8 clip_gyr_y
+int8 clip_gyr_z
+int8 clip_mag_x
+int8 clip_mag_y
+int8 clip_mag_z
+int8 clipping_indication
+int8 syncin_marker
+int8 syncout_marker
+int8 filter_mode
+int8 gnss_time_pulse
+int8 rtk_status
+
+# Signal Value Constants
+int8 RTK_STATUS_NO_RTK = 0
+int8 RTK_STATUS_RTK_FLOATING = 1
+int8 RTK_STATUS_RTK_FIXED = 2
