@@ -63,6 +63,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "dbc_msgs/CubemarsFeedback.msg"
   "dbc_msgs/CubemarsPositionLoop.msg"
   "dbc_msgs/Dashboard.msg"
+  "dbc_msgs/DataAqt1.msg"
+  "dbc_msgs/DataAqt7.msg"
   "dbc_msgs/DvDynamics1.msg"
   "dbc_msgs/DvDynamics2.msg"
   "dbc_msgs/DvStatus.msg"
